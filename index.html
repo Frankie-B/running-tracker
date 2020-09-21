@@ -4,9 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Document</title>
+    <title>Running Tracker</title>
   </head>
   <body>
+    <div class="logo">
+      <img src="./img/runner.svg" alt="" srcset="" />
+    </div>
+
+    <form>
+      <label for="entry">Number of Kilometers per day</label>
+      <br />
+      <input type="number" id="entry" step="0.1" />
+      <br />
+      <button type="submit">Add</button>
+    </form>
+
+    <hr />
+
+    <section class="entriesWrapper">
+      <h3>Last 7 days</h3>
+      <ul id="entries">
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+        <li>-</li>
+      </ul>
+    </section>
+
+    <section class="data">
+      <div>
+        <p>Total:</p>
+        <span id="total"></span>
+      </div>
+      <div>
+        <p>Average distance</p>
+        <span id="average"></span>
+      </div>
+      <div>
+        <p>This weeks high</p>
+        <span id="high"></span>
+      </div>
+    </section>
+
+    <section class="progress">
+      <h3>
+        Weekly Goal: <span id="progressTotal">0</span> /
+        <span id="target">25</span> Kilometers
+      </h3>
+      <div class="progressCircleWrapper">
+        <!-- TODO: Progress bar -->
+      </div>
+    </section>
+
     <script src="index.js"></script>
   </body>
 </html>

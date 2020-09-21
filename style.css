@@ -49,7 +49,7 @@ button {
 
 ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   list-style: none;
   padding: 0;
 }
@@ -67,7 +67,7 @@ ul {
 
 li {
   border: 1px solid;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1rem;
 }
 
 .data {
@@ -81,4 +81,49 @@ li {
   background: #141c22;
   margin: 0.5rem 0;
   padding: 0 1rem;
+}
+
+.progress {
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.progress h3 {
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.progressCircleWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#progressCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+}
+
+#progressCenter {
+  background: #1c262f;
+  border-radius: 50%;
+  height: 220px;
+  width: 220px;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    width: 60%;
+  }
+
+  input[type='number'] {
+    width: 40%;
+  }
+
+  svg {
+    max-width: 50%;
+  }
 }

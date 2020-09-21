@@ -36,6 +36,17 @@ const weeklyHigh = () => {
   document.querySelector('#high').innerText = high;
 }
 
+const calcGoal = () => {
+  const totalValue = entries.reduce(reducer).toFixed(1);
+  const completedPercent = totalValue / (goal / 100);
+  const progressCircle = document.querySelector('#progressCircle');
+
+  if (completedPercent > 100) completedPercent = 100;
+
+  progressCircle.style.background = `conic-gradient(#28df99 ${completedPercent}%, #2d3740 ${completedPercent}% 100%)`;
+
+};
+
 const handleSubmit = (e) => {
   e.preventDefault();
   const entry = Number(document.querySelector('#entry').value);
@@ -49,6 +60,7 @@ const handleSubmit = (e) => {
   calcTotal();
   calcAverage();
   weeklyHigh();
+  calcGoal();
 };
 
 const form = document.querySelector('form').addEventListener('submit', handleSubmit);

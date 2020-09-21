@@ -1,0 +1,84 @@
+html {
+  background: #2d3740;
+  font-family: 'MuseoModerno', cursive;
+  font-size: 10px;
+}
+
+body {
+  background: #1c262f;
+  color: rgb(230, 255, 255);
+  margin: 0 auto;
+  padding: 1rem;
+  width: 90%;
+}
+
+.logo {
+  text-align: center;
+}
+
+form {
+  text-align: center;
+}
+
+label {
+  font-size: 1.8rem;
+}
+
+input[type='number'] {
+  background: rgb(230, 255, 255);
+  border: none;
+  font-family: inherit;
+  font-size: 1.2rem;
+  margin: 1rem 0;
+  padding: 0.8rem 0;
+  text-align: center;
+  width: 80%;
+}
+
+button {
+  border: none;
+  border-radius: 50%;
+  background: #2ec1ac;
+  font-family: inherit;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  margin: 0.5rem 0 1rem 0;
+  height: 80px;
+  width: 80px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+}
+
+.entriesWrapper {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+.entriesWrapper h3 {
+  font-weight: lighter;
+  margin: 0;
+  text-align: center;
+}
+
+li {
+  border: 1px solid;
+  padding: 1rem 1.5rem;
+}
+
+.data {
+  font-size: 1.4rem;
+}
+
+.data div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #141c22;
+  margin: 0.5rem 0;
+  padding: 0 1rem;
+}
